@@ -20,12 +20,12 @@ class MathUtilityDDTTest {
                 { 3, 6 },
                 { 4, 24 },
                 { 5, 120 },   //5! hy vọng 120
-                { 6, 7200 },
+                { 6, 720 },
         };
     }
 
     @ParameterizedTest
-    @MethodSource("initData")   //DDT
+    @MethodSource("initData")   //DDT - Data Driven Testing
     public void testFactorialGivenRightAgrumentReturnsWell(int n, long expectedResult) {
         assertEquals(expectedResult, getFactorial(n));
     }
